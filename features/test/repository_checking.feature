@@ -13,21 +13,3 @@ Feature: Repository checking
       | abc123   |
       | qwe456   |
       | asd789   |
-
-
-
-
-#  def test_create_repository(repo_name):
-#    """Тест на створення нового репозиторію."""
-#    payload = {"name": repo_name, "private": False}
-#    response = requests.post(f"{BASE_URL}/user/repos", headers=HEADERS, json=payload)
-#    assert response.status_code == 201, "Не вдалося створити репозиторій"
-#    repo_data = response.json()
-#    assert repo_data["name"] == repo_name, "Ім'я репозиторія не збігається"
-#
-#    print(f"Repository '{repo_name}' created successfully")
-#
-#    # Postcondition
-#    requests.delete(f"{BASE_URL}/repos/{USER_LOGIN}/{repo_name}",
-#                    headers=HEADERS)
-#    assert response.status_code == 201
